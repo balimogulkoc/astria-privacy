@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Astria · Gizlilik Politikası</title>
+<meta name="description" content="Astria astroloji uygulamasının gizlilik politikası: hangi veriler cihazda kalır, hangileri cihaz dışına gider." />
+<style>
+  :root {
+    --bg: #ffffff;
+    --surface: #f6f5fb;
+    --text: #17161f;
+    --muted: #5b5870;
+    --line: #e3e0ef;
+    --accent: #6d4aff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0b0a16;
+      --surface: #16142a;
+      --text: #f2f1f7;
+      --muted: #a9a5c0;
+      --line: #2a2742;
+      --accent: #a78bfa;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    padding: 0 16px;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 48px 0 72px; }
+  h1 { font-size: 30px; line-height: 1.2; margin: 0 0 6px; }
+  h2 { font-size: 20px; margin: 36px 0 10px; }
+  .date { color: var(--muted); font-size: 14px; margin-bottom: 28px; }
+  p, li { color: var(--text); }
+  a { color: var(--accent); }
+  .box { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; margin: 20px 0; }
+  .box ul { margin: 0; padding-left: 20px; }
+  table { width: 100%; border-collapse: collapse; margin: 14px 0; font-size: 15px; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { color: var(--muted); font-weight: 600; }
+  footer { margin-top: 44px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Astria Gizlilik Politikası</h1>
+  <p class="date">Son güncelleme: 21 Eylül 2026</p>
+
+  <p>Astria (&laquo;uygulama&raquo;), Velaris Labs tarafından geliştirilmiştir. Bu politika,
+  uygulamanın hangi verileri işlediğini ve neden işlediğini açıklar.</p>
+
+  <div class="box">
+    <strong>Kısaca</strong>
+    <ul>
+      <li>Hesap açmanız gerekmez; uygulamayı kullanmak için giriş yapmazsınız.</li>
+      <li>Doğum bilgileriniz, günlüğünüz, sohbetleriniz ve ayarlarınız yalnızca cihazınızda saklanır.</li>
+      <li>Sunucumuzda kullanıcı verisi tutulmaz; uygulamada reklam ağı veya analiz/izleme aracı yoktur.</li>
+      <li>Veriler internete yalnızca üç durumda gider: yapay zekâ astroloğa soru sorduğunuzda,
+        şehir aradığınızda ve asteroit konumlarını görüntülediğinizde.</li>
+    </ul>
+  </div>
+
+  <h2>Cihazınızda saklanan veriler</h2>
+  <p>Aşağıdaki veriler cihazınızın yerel deposunda tutulur; bizim erişimimiz yoktur:</p>
+  <table>
+    <thead><tr><th>Veri</th><th>Neden gerekli</th></tr></thead>
+    <tbody>
+      <tr><td>Ad veya takma ad</td><td>Size hitap etmek ve numeroloji hesapları</td></tr>
+      <tr><td>Doğum tarihi, saati ve yeri (şehir, koordinat, saat dilimi)</td><td>Doğum haritasını hesaplamak</td></tr>
+      <tr><td>Eklediğiniz diğer kişilerin doğum bilgileri</td><td>İlişki ve uyum analizleri</td></tr>
+      <tr><td>Günlük notlarınız, tarot açılımlarınız, sohbet geçmişiniz</td><td>Geçmişi uygulamada gösterebilmek</td></tr>
+      <tr><td>Uygulama ayarları (tema, bildirim tercihleri, ev sistemi vb.)</td><td>Tercihlerinizi hatırlamak</td></tr>
+    </tbody>
+  </table>
+  <p>Bu verileri uygulama içinden dışa aktarabilir (Hakkında &rarr; &laquo;Verilerimi dışa aktar&raquo;),
+  uygulamayı kaldırarak veya cihaz ayarlarından uygulama verisini silerek tamamen kaldırabilirsiniz.</p>
+
+  <h2>Cihaz dışına giden veriler</h2>
+  <p><strong>1. Yapay zekâ astrolog (Lyra) sorularınız.</strong> Soru sorduğunuzda mesajınız ve
+  haritanızın özeti (gezegen konumları, burçlar, açılar; adınızın baş kısmı dâhil olabilir)
+  Astria yapay zekâ sunucusuna, oradan da yanıtı üretmesi için Anthropic&rsquo;in Claude API&rsquo;sine
+  gönderilir. Sunucumuz bu içeriği veritabanına kaydetmez; yalnızca teknik hata kayıtları tutulur.
+  Anthropic&rsquo;in koşulları: <a href="https://www.anthropic.com/legal/privacy">anthropic.com/legal/privacy</a>.
+  Yapay zekâ sunucusu tanımlı değilse uygulama çevrimdışı modda çalışır ve hiçbir şey gönderilmez.</p>
+
+  <p><strong>2. Şehir araması.</strong> Doğum yeri ararken yazdığınız şehir adı, koordinatları bulmak için
+  OpenStreetMap Nominatim servisine gönderilir:
+  <a href="https://osmfoundation.org/wiki/Privacy_Policy">osmfoundation.org</a>.
+  Uygulamanın içinde yerleşik bir şehir listesi de vardır; birçok arama internete hiç çıkmadan sonuçlanır.
+  Uygulama cihazın konum servisini (GPS) kullanmaz ve konum izni istemez.</p>
+
+  <p><strong>3. Asteroit konumları.</strong> &laquo;Araçlar &rarr; Asteroitler&raquo; ekranını açtığınızda tarih bilgisi
+  NASA JPL Horizons servisine gönderilir: <a href="https://ssd.jpl.nasa.gov">ssd.jpl.nasa.gov</a>.</p>
+
+  <p>Bu isteklerin hiçbirinde reklam kimliği, cihaz kimliği veya iletişim bilgisi gönderilmez.
+  Her internet isteğinde olduğu gibi, ilgili servisler IP adresinizi görür.</p>
+
+  <h2>Bildirimler</h2>
+  <p>Günlük burç yorumu, yeniay/dolunay ve retro hatırlatmaları cihazınızda planlanır.
+  Sunucudan anlık bildirim gönderilmez. Bildirimleri uygulama ayarlarından veya cihaz
+  ayarlarından kapatabilirsiniz.</p>
+
+  <h2>İzinler</h2>
+  <p>Uygulama yalnızca şu izinleri ister: internet erişimi, bildirim gösterme ve titreşim.
+  Kamera, mikrofon, konum, kişiler ve dosya erişimi istemez.</p>
+
+  <h2>Satın almalar</h2>
+  <p>Uygulamada şu anda ücretli içerik veya satın alma yoktur. İleride eklenirse satın almalar
+  Google Play üzerinden yapılır; ödeme bilgilerinizi biz görmeyiz ve saklamayız.</p>
+
+  <h2>Çocuklar</h2>
+  <p>Uygulama çocuklara yönelik değildir ve 13 yaşın altındaki kullanıcılardan bilerek veri toplamaz.</p>
+
+  <h2>Sorumluluk reddi</h2>
+  <p>Astroloji, tarot ve numeroloji kültürel yorum geleneklerdir; bilimsel yöntem değildir.
+  Uygulamadaki yorumlar eğlence ve kişisel farkındalık amaçlıdır; tıbbi, hukuki, finansal veya
+  psikolojik profesyonel tavsiye yerine geçmez.</p>
+
+  <h2>Değişiklikler</h2>
+  <p>Bu politika güncellenirse buradaki &laquo;Son güncelleme&raquo; tarihi değişir ve önemli değişiklikler
+  uygulama içinde duyurulur.</p>
+
+  <h2>İletişim</h2>
+  <p>Sorularınız için: <a href="mailto:astrialoji@gmail.com">astrialoji@gmail.com</a></p>
+
+  <footer>Astria &middot; Velaris Labs</footer>
+</main>
+</body>
+</html>
