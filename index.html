@@ -49,7 +49,7 @@
 <body>
 <main>
   <h1>Astelya Gizlilik Politikası</h1>
-  <p class="date">Son güncelleme: 21 Eylül 2026</p>
+  <p class="date">Son güncelleme: 24 Ekim 2026</p>
 
   <p>Astelya (&laquo;uygulama&raquo;), Velaris Labs tarafından geliştirilmiştir. Bu politika,
   uygulamanın hangi verileri işlediğini ve neden işlediğini açıklar.</p>
@@ -59,8 +59,10 @@
     <ul>
       <li>Hesap açmanız gerekmez; uygulamayı kullanmak için giriş yapmazsınız.</li>
       <li>Doğum bilgileriniz, günlüğünüz, sohbetleriniz ve ayarlarınız yalnızca cihazınızda saklanır.</li>
-      <li>Sunucumuzda kullanıcı verisi tutulmaz; uygulamada reklam ağı veya analiz/izleme aracı yoktur.</li>
-      <li>Veriler internete yalnızca üç durumda gider: yapay zekâ astroloğa soru sorduğunuzda,
+      <li>Sunucumuzda kullanıcı verisi tutulmaz; uygulamada analiz/izleme aracı yoktur.</li>
+      <li>Astelya ücretsizdir ve Google AdMob reklamlarıyla desteklenir. Reklamlar için reklam kimliği gibi
+        cihaz verileri Google&rsquo;a gider; doğum bilgileriniz, günlüğünüz ve sohbetleriniz reklam ağına gönderilmez.</li>
+      <li>Bunun dışında veriler internete yalnızca üç durumda gider: yapay zekâ astroloğa soru sorduğunuzda,
         şehir aradığınızda ve asteroit konumlarını görüntülediğinizde.</li>
     </ul>
   </div>
@@ -97,8 +99,30 @@
   <p><strong>3. Asteroit konumları.</strong> &laquo;Araçlar &rarr; Asteroitler&raquo; ekranını açtığınızda tarih bilgisi
   NASA JPL Horizons servisine gönderilir: <a href="https://ssd.jpl.nasa.gov">ssd.jpl.nasa.gov</a>.</p>
 
-  <p>Bu isteklerin hiçbirinde reklam kimliği, cihaz kimliği veya iletişim bilgisi gönderilmez.
+  <p>Bu üç istekte reklam kimliği, cihaz kimliği veya iletişim bilgisi gönderilmez.
   Her internet isteğinde olduğu gibi, ilgili servisler IP adresinizi görür.</p>
+
+  <p><strong>4. Reklamlar (Google AdMob).</strong> Uygulamada Google AdMob reklamları gösterilir: Bugün ekranında,
+  burç ve tarot yorumlarının sonunda ve Ay takviminde birer reklam kartı; harita yorumunu yeniden açarken
+  isteğe bağlı olarak izlenen kısa ödüllü reklamlar. Reklam gösterebilmek, reklamları ölçebilmek ve
+  sahtekârlığı önleyebilmek için Google Mobile Ads SDK&rsquo;sı şu verileri otomatik olarak toplar ve
+  Google ile reklam iş ortaklarıyla paylaşır:</p>
+  <table>
+    <thead><tr><th>Veri</th><th>Açıklama</th></tr></thead>
+    <tbody>
+      <tr><td>IP adresi</td><td>Cihazın genel (yaklaşık) konumunu tahmin etmek için kullanılabilir</td></tr>
+      <tr><td>Uygulama etkileşimleri</td><td>Uygulamanın açılması, reklama dokunma, video izleme</td></tr>
+      <tr><td>Tanılama bilgileri</td><td>Açılış süresi, donma oranı, enerji kullanımı gibi teknik bilgiler</td></tr>
+      <tr><td>Cihaz kimlikleri</td><td>Android reklam kimliği ve uygulama grubu kimliği</td></tr>
+    </tbody>
+  </table>
+  <p>Bu veriler aktarım sırasında şifrelenir (TLS). Doğum bilgileriniz, kişileriniz, günlüğünüz, tarot
+  açılımlarınız ve sohbetleriniz reklam ağına <strong>gönderilmez</strong>.</p>
+  <p>Avrupa Ekonomik Alanı, Birleşik Krallık ve İsviçre&rsquo;deki kullanıcılardan kişiselleştirilmiş reklam için
+  izin istenir; bu tercihi uygulamada <strong>Ayarlar &rarr; Reklam gizlilik seçenekleri</strong> bölümünden
+  değiştirebilirsiniz. Android&rsquo;de reklam kimliğinizi cihaz ayarlarından (Gizlilik &rarr; Reklamlar) sıfırlayabilir
+  veya silebilirsiniz. Google&rsquo;ın verileri nasıl kullandığı:
+  <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.</p>
 
   <h2>Bildirimler</h2>
   <p>Günlük burç yorumu, yeniay/dolunay ve retro hatırlatmaları cihazınızda planlanır.
@@ -106,8 +130,8 @@
   ayarlarından kapatabilirsiniz.</p>
 
   <h2>İzinler</h2>
-  <p>Uygulama yalnızca şu izinleri ister: internet erişimi, bildirim gösterme ve titreşim.
-  Kamera, mikrofon, konum, kişiler ve dosya erişimi istemez.</p>
+  <p>Uygulama şu izinleri kullanır: internet erişimi, bildirim gösterme, titreşim ve reklamlar için
+  reklam kimliği (AD_ID). Kamera, mikrofon, konum, kişiler ve dosya erişimi istemez.</p>
 
   <h2>Satın almalar</h2>
   <p>Uygulamada şu anda ücretli içerik veya satın alma yoktur. İleride eklenirse satın almalar
